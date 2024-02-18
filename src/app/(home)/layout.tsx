@@ -4,12 +4,12 @@ import "../globals.css";
 
 import { ReactNode } from "react";
 
-export default function Layout(props: {
+export default function Layout({children}: {
   children: ReactNode,
 }) {
   return <div>
     <Navbar />
-    {props.children}
+    {children}
     <Footer />
   </div>
 }
